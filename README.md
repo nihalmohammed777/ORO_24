@@ -178,3 +178,4 @@ Deployment
 The application is deployed on Vercel/Netlify with automatic CI/CD from the main branch.
 
 Live Demo: [https://monumental-moonbeam-5cf416.netlify.app]
+------------------------------------------------
