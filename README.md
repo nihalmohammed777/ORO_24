@@ -1,19 +1,3 @@
-<!-- # React + Vite + Tailwind CSS Project
-
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
-
-## 🚀 Features
-
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router** - Declarative routing for React applications
-
-## 📋 Prerequisites
-
-- Node.js (v14.x or higher)
-- npm or yarn
-
 
 ## 🛠️ Installation
 
@@ -45,8 +29,6 @@ A modern React-based project utilizing the latest frontend technologies and tool
 │   └── Routes.jsx       # Application routes
 ├── index.html           # HTML template
 ├── package.json         # Project dependencies and scripts
-├── postcss.config.js    # PostCSS configuration for Tailwind
-├── tailwind.config.js   # Tailwind CSS configuration
 ├── vite.config.js       # Vite configuration
 ```
 
@@ -83,7 +65,6 @@ This project uses Tailwind CSS for styling. The configuration includes:
 - Utility-first approach for rapid development
 - Custom theme configuration
 - Responsive design utilities
-- PostCSS and Autoprefixer integration
 
 ## 📦 Deployment
 
@@ -97,9 +78,7 @@ npm run build
 
 - Built with [Rocket.new](https://rocket.new)
 - Powered by React and Vite
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new -->
+- Styled with saSS
 
 
 # ORO24 Mini Web App
@@ -121,7 +100,7 @@ A modern React application for ORO24 facilities management services with login, 
 - **React Router v6** for navigation
 - **Context API** for state management
 - **Axios** for API requests with interceptors
-- **Tailwind CSS** for styling
+- **SASS** for styling
 - **Class Variance Authority** for variant management
 - **React Helmet Async** for SEO
 
@@ -150,10 +129,6 @@ cd oro24-app
 2.install Dependencies
 npm install
 
-3.Set up environment variables (create .env file):
-REACT_APP_API_AUTH_URL=https://oro24world.com/api
-REACT_APP_API_SERVICES_URL=https://o24living.com/api/public
-
 4.Start the development server
 npm start
 
@@ -174,7 +149,7 @@ Service Details - Get detailed service information
 
 -----------------------------------------------------------------
 Demo Credentials
-Email: test_oro@yopmail.com
+Email: oro_1993@yopmail.com
 
 Password: *123@Abc
 
@@ -202,36 +177,4 @@ Clean, modular code structure
 Deployment
 The application is deployed on Vercel/Netlify with automatic CI/CD from the main branch.
 
-Live Demo: [Your Live URL Here]
-
-----------------------------------------------------------------------
-Screenshots
-[Add your screenshots here]
-
---------------------------------------------------------------------
-Bonus Features
-Loading Skeletons - Better UX during loading states
-
-Offline Support - Service worker implementation
-
-Dark Mode - Theme switching capability
-
-PWA - Installable as a Progressive Web App
-
-----------------------------------------------------------------------
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
-
-------------------------------------------------------------------
-## Key Improvements Made:
-
-1. **Proper Architecture**: Context API for state management instead of prop drilling
-2. **Error Handling**: Comprehensive error boundaries and user-friendly messages
-3. **Performance**: Lazy loading, memoization, and optimized re-renders
-4. **Security**: Protected routes, token validation, and secure storage
-5. **Code Quality**: Proper PropTypes, custom hooks, and modular structure
-6. **UX**: Loading states, validation, and smooth transitions
-7. **Maintainability**: Clear folder structure and reusable components
-8. **SEO**: Proper meta tags with React Helmet
-9. **Accessibility**: ARIA labels and semantic HTML
-10. **Testing Ready**: Export patterns and prop types make components testable
+Live Demo: [https://monumental-moonbeam-5cf416.netlify.app]
