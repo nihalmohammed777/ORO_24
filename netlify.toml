@@ -1,10 +1,23 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    "Content-Type" = "application/javascript; charset=utf-8"
-    "X-Content-Type-Options" = "nosniff"
+[build]
+  command = "npm run build"
+  publish = "dist"  # Vite output
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200  # For React Router
 
 [[headers]]
-  for = "*.jsx"
+  for = "/"  # Specifically for index.html
   [headers.values]
-    "Content-Type" = "application/javascript"
+    Content-Type = "text/html; charset=UTF-8"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/assets/*.jsx"
+  [headers.values]
+    Content-Type = "application/javascript"
