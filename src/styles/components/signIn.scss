@@ -1,5 +1,6 @@
 // Sign In Page
-@use "../utils/_variable" as *;
+@use "../utils/_variable.scss" as *;
+
 .signin {
   min-height: 100vh;
   position: relative;
@@ -90,7 +91,7 @@
   }
 
   &__error {
-    color: darken($bg-error, 20%);
+    color: $bg-error;
     font-size: $font-size-md;
     text-align: center;
     margin-bottom: 15px;
