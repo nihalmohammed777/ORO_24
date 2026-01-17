@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import SignInPage from './pages/SignIn/index';
-import ServicesPage from './pages/services/index';
+import SignInPage from './pages/SignIn/index.jsx';
+import ServicesPage from './pages/services/index.jsx';
 
 const AppRoutes = () => {
   return (
