@@ -1,8 +1,8 @@
 // Import variables and mixins
-@import './utils/_variable';
-@import './components/_common';
-@import './components/_ui';
-@import './components/signin';
+@import './utils/_variable.scss';
+@import './components/_common.scss';
+@import './components/_ui.scss';
+@import './components/signin.scss';
 @import './components/services/services.scss';
 @import './components/services/heroSectionServices.scss';
 @import './components/services/ServiceSection.scss';
