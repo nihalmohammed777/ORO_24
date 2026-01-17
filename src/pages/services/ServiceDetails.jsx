@@ -19,7 +19,6 @@ const ServiceDetails = ({ serviceId }) => {
       setLoading(true);
       const response = await apiService?.getServiceDetails(id);
       
-      // Check response structure
       let details = null;
       if (response?.Service && Array.isArray(response.Service) && response.Service.length > 0) {
         details = {
@@ -39,7 +38,6 @@ const ServiceDetails = ({ serviceId }) => {
     }
   };
 
-  // Default content when no service is selected
   if (!serviceId) {
     return (
       <section className="service-details">
@@ -66,7 +64,6 @@ const ServiceDetails = ({ serviceId }) => {
     );
   }
 
-  // Fallback if no details found
   if (!serviceDetails) {
     return (
       <section className="service-details">
@@ -87,7 +84,6 @@ const ServiceDetails = ({ serviceId }) => {
   const teamSize = serviceDetails?.TeamSize || '2-3 Cleaners';
   const propertyType = serviceDetails?.PropertyType || '1 BR';
   
-  // Get images - use PrimaryImage or first image from ServiceImages
   const primaryImage = serviceDetails?.PrimaryImage || 
     (serviceDetails?.ServiceImages && serviceDetails.ServiceImages.length > 0 
       ? serviceDetails.ServiceImages[0]?.ImageURL 
@@ -100,7 +96,6 @@ const ServiceDetails = ({ serviceId }) => {
     return img;
   };
 
-  // Sample inclusions - adjust based on API if available
   const inclusions = [
     'a. Bedrooms & Living Areas',
     'b. Kitchen',
@@ -114,7 +109,6 @@ const ServiceDetails = ({ serviceId }) => {
         <h2 className="service-details__title">Service Detail</h2>
         
         <div className="service-details__content">
-          {/* Service Header */}
           <div className="service-details__header">
             <h3 className="service-details__service-name">
               {serviceName}
@@ -125,7 +119,6 @@ const ServiceDetails = ({ serviceId }) => {
             </div>
           </div>
           
-          {/* Service Image */}
           <div className="service-details__image">
             <img
               src={getImageUrl(primaryImage)}
@@ -136,7 +129,6 @@ const ServiceDetails = ({ serviceId }) => {
             />
           </div>
           
-          {/* Service Description */}
           <div className="service-details__section">
             <p className="service-details__section-title">Service Description:</p>
             <p className="service-details__description">
@@ -144,7 +136,6 @@ const ServiceDetails = ({ serviceId }) => {
             </p>
           </div>
           
-          {/* Service Timing & Duration Table */}
           <div className="service-details__section">
             <p className="service-details__section-title">Service Timing & Duration:</p>
             <div className="service-details__table">
@@ -161,7 +152,6 @@ const ServiceDetails = ({ serviceId }) => {
             </div>
           </div>
           
-          {/* What's Included */}
           <div className="service-details__section">
             <p className="service-details__section-title">What's Included:</p>
             <ul className="service-details__inclusions">

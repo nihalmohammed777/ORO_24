@@ -7,7 +7,7 @@
   z-index: 100;
 
   &__container {
-    width: 100%;  // Ensure full width on all screens
+    width: 100%; 
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -21,10 +21,10 @@
     position: relative;
 
     @include responsive(lg) {
-      padding: 10px 15rem;  // Reduced from 110px to 2rem for better fit on 1024px screens; adjust if needed
+      padding: 10px 15rem; 
     }
       @include responsive(md) {
-      padding: 10px 6rem;  // Reduced from 110px to 2rem for better fit on 1024px screens; adjust if needed
+      padding: 10px 6rem;  
     }
   }
 
@@ -33,19 +33,18 @@
     height: auto;
   }
 
-  // Desktop Navigation - Show on large screens
   &__nav {
-    display: none; // Hidden on mobile by default
+    display: none;
     @include responsive(lg) {
       display: flex;
       align-items: center;
-      gap: 13rem;  // Adjusted gap for better spacing on 1024px
+      gap: 13rem;  
     }
   }
 
   &__menu {
     display: flex;
-    gap: 2rem;  // Reduced gap from 3rem to 2rem for better fit on smaller lg screens
+    gap: 2rem; 
     list-style: none;
     padding: 0;
     margin: 0;
@@ -69,7 +68,7 @@
 
   &__actions {
     display: flex;
-    gap: 1.5rem;  // Slightly reduced gap for better fit
+    gap: 1.5rem;  
     align-items: center;
   }
 
@@ -123,7 +122,6 @@
     font-size: $font-size-md;
   }
 
-  // Hamburger - Show on small screens
   &__hamburger {
     display: block;
     background: none;
@@ -138,7 +136,6 @@
     }
   }
 
-  // Mobile Menu - Show on small screens
   &__mobile-menu {
     display: block;
     background: $header-bg;

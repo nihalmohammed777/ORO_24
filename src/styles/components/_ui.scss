@@ -20,10 +20,6 @@
   &--secondary {
     background-color: $accent;
     color: $text-white;
-
-    &:hover {
-      // background-color: darken($accent, 10%);
-    }
   }
 
   &--outline {

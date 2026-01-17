@@ -12,7 +12,6 @@ const ServiceListings = ({
   onPageChange,
   selectedServiceId
 }) => {
-  // Default services for fallback
   const defaultServices = [
     {
       ServiceID: 1,
@@ -59,7 +58,6 @@ const ServiceListings = ({
     );
   }
 
-  // Show message if no services
   if (!loading && services.length === 0) {
     return (
       <section className="service-listings">
@@ -92,7 +90,6 @@ const ServiceListings = ({
           const serviceDescription = service?.Description || '';
           const isSelected = selectedServiceId === serviceId;
 
-          // Handle image URL - check if it's a full URL or needs base URL
           const getImageUrl = (img) => {
             if (!img) return '/images/img_pexels_karolina_168x174.png';
             if (img.startsWith('http')) return img;
@@ -100,7 +97,6 @@ const ServiceListings = ({
             return img;
           };
 
-          // Determine badge type based on service name or price
           const getBadgeType = () => {
             if (serviceName.includes('Premium')) return 'Premium';
             if (serviceName.includes('Basic')) return 'Basic';
@@ -178,7 +174,6 @@ const ServiceListings = ({
         })}
       </div>
 
-      {/* Pagination - use totalPages from API */}
       {displayServices.length > 0 && totalPages > 1 && (
         <div className="service-listings__pagination">
           <Pagination

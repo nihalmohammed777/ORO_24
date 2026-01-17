@@ -62,7 +62,6 @@
     }
     }
 
-    // Image
     &-image {
       position: relative;
       width: 100px;
@@ -77,7 +76,6 @@
       }
     }
 
-    // Badge
     &-badge {
       position: absolute;
       top: 8px;
@@ -100,7 +98,6 @@
       }
     }
 
-    // Content
     &-content {
       flex: 1;
       display: flex;
@@ -125,7 +122,6 @@
       margin-bottom: 0.5rem;
     }
 
-    // Price section
     &-price-section {
       display: flex;
       flex-direction: column;
@@ -196,7 +192,6 @@
     }
   }
 
-  // Pagination
   &__pagination {
     margin-top: 2rem;
     display: flex;
