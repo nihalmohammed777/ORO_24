@@ -1,4 +1,6 @@
 // Header Component
+@use "../utils/_variable" as *;
+
 .header {
   background-color: $header-bg;
   border-bottom: 1px solid $header-border;

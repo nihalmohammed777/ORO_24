@@ -1,4 +1,6 @@
 // Services Page
+@use "../utils/_variable" as *;
+
 .services {
   min-height: 100vh;
   background-color: $secondary-light;

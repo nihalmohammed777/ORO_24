@@ -1,3 +1,5 @@
+@use "../utils/_variable" as *;
+
 .button {
   @include flex-center;
   font-family: $font-family-base;
