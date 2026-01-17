@@ -72,7 +72,7 @@ cd oro24-app
 npm install
 
 4.Start the development server
-npm start
+npm run dev
 
 5.Build for production
 npm run build
